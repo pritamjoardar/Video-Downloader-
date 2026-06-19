@@ -1,6 +1,10 @@
 # ⚡ VidFetch
 
 <p align="center">
+  <img src="https://github.com/pritamjoardar/Video-Downloader-/blob/main/ChatGPT%20Image%20Jun%2019%2C%202026%2C%2012_11_16%20PM.png?raw=true" alt="VidFetch Banner" width="100%" />
+</p>
+
+<p align="center">
   <strong>High-Quality Multi-Threaded Video Downloader for Windows</strong>
 </p>
 
@@ -122,7 +126,7 @@ npm install
 # Run local development server
 npm run dev
 ```
-Open [http://localhost:3000](http://localhost:3000) to view the landing page locally.
+Open your browser to view the landing page locally.
 
 #### Build Web Server Production Bundle:
 ```bash
