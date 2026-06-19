@@ -73,65 +73,21 @@ graph TD
 *   [`VidFetch_Installer.nsi`](file:///c:/Users/prita/Desktop/video%20downloaed/VidFetch_Installer.nsi): NSIS compiler script that packages the standalone executable into a setup installation program.
 *   [`vidfetch-web/`](file:///c:/Users/prita/Desktop/video%20downloaed/vidfetch-web/): Next.js web application root.
 
----
+## 🚀 Setup & Installation
 
-## 🛠️ Installation & Development
+Getting started with VidFetch is simple and requires no environment configuration:
 
-### 1. Running & Compiling the Desktop App
+1. **Download the Installer:** Visit the [VidFetch Production Site](https://vidfetch.pritamjoardar.com/) and click on **Download for Windows** to download `VidFetch_Setup.exe`.
+2. **Run Setup:** Double-click the downloaded `VidFetch_Setup.exe` file.
+3. **Install:** Follow the step-by-step installer wizard. It will:
+   * Install VidFetch to your Program Files.
+   * Add a Desktop shortcut.
+   * Add a Start Menu entry.
+   * Pre-package the bundled FFmpeg environment.
+4. **Enjoy:** Launch VidFetch from your desktop and start downloading videos instantly.
 
-#### Requirements:
-*   Python 3.8 or higher
-*   Microsoft Windows OS (for GUI animations and suspension APIs)
-
-#### Setup Environment:
-```bash
-# Clone the repository
-git clone https://github.com/pritamjoardar/Video-Downloader.git
-cd Video-Downloader
-
-# Install required dependencies
-pip install -r requirements.txt
-pip install pillow psutil
-```
-
-#### Run the Dev Version:
-```bash
-python downloader_app.py
-```
-
-#### Build Standalone Executable & Installer:
-To compile the Python application into a standalone `.exe` and package it into a Windows Setup installer, make sure you have [NSIS](https://nsis.sourceforge.io/) installed, then run the batch script:
-```bash
-"Build Installer.bat"
-```
-This script will:
-1. Run PyInstaller via `VidFetch.spec` to create a bundled directory in `dist/`.
-2. Compile `VidFetch_Installer.nsi` using `makensis` to create the final setup installer: `VidFetch_Setup.exe`.
-
----
-
-### 2. Developing the Web Landing Page
-
-#### Requirements:
-*   Node.js v18.0.0 or higher
-*   npm or yarn
-
-#### Setup & Start:
-```bash
-cd vidfetch-web
-
-# Install dependencies
-npm install
-
-# Run local development server
-npm run dev
-```
-Open your browser to view the landing page locally.
-
-#### Build Web Server Production Bundle:
-```bash
-npm run build
-```
+> [!TIP]
+> **Zero Configuration:** FFmpeg and all necessary dependencies are pre-packaged within the installer. There is no need to manually download FFmpeg or edit your system environment path variables.
 
 ---
 
